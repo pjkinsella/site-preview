@@ -26,13 +26,12 @@
   </header>
 </div>
 <footer class="foot">
-  <a class="mail" href="mailto:EmailMe@PatrickJKinsella.com">EmailMe@PatrickJKinsella.com</a>
   <p class="links"><a href="https://x.com/pjkinsella">X</a> <a href="https://github.com/pjkinsella">GitHub</a></p>
 </footer>
 <script type="module">
 const rig=document.querySelector('.rig');
 const ok=!matchMedia('(prefers-reduced-motion: reduce)').matches&&(()=>{try{return !!document.createElement('canvas').getContext('webgl2')}catch{return false}})();
-if(ok){const go=()=>import('./rig.js').then(m=>m.start(rig));
+if(ok){const go=()=>import('./rig.js?v=13842').then(m=>m.start(rig));
   'requestIdleCallback' in window?requestIdleCallback(go,{timeout:600}):setTimeout(go,200);}
 </script>
 </body>
